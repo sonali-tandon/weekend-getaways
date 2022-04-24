@@ -2,6 +2,10 @@ body {
     background-color: rgba(219, 255, 255, 0.734);
 }
 
+#bannerimg {
+    max-width: 100%;
+}
+
 nav ul {
     display: flex;
     flex-direction: row;
