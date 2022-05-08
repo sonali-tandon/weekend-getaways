@@ -134,4 +134,9 @@ footer cite:first-of-type {
     display: block;
 }
 
+.multipleimages {
+    display: flex;
+    justify-content: space-evenly;
+}
+
 /*outdoors.html styles ended*/
