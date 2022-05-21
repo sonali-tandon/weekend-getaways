@@ -106,6 +106,10 @@ footer {
     padding: 20px 0px;
 }
 
+.fab {
+    padding: 0px 5px;
+}
+
 .copyrights {
     display: block;
     font-weight: bold;
