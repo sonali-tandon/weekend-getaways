@@ -225,7 +225,35 @@ footer cite:first-of-type {
         font-size: 35px;
     }
 
+    header p {
+        font-size: 30px;
+    }
 
+    main h2 {
+        font-size: 21px;
+    }
+
+    main p {
+        font-size: 14px;
+    }
+
+    .linktopage {
+        font-size: 31px;
+    }
+
+    section ol li {
+        font-size: 25px;
+    }
+
+    .copyrights {
+        font-size: 12px;
+    }
+
+    footer section {
+        font-size: 12px;
+    }
 }
+
+@media only screen and (max-width: 570px) {}
 
 /*responsive styling ended*/
