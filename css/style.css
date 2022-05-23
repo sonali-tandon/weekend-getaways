@@ -162,6 +162,12 @@ footer cite:first-of-type {
 
 /*responsive styling started*/
 
+@media only screen and (max-width: 910px) {
+    .attractionsimages {
+        height: 300px;
+    }
+}
+
 @media only screen and (max-width: 755px) {
     h1 {
         font-size: 40px;
@@ -236,6 +242,12 @@ footer cite:first-of-type {
     }
 }
 
+@media only screen and (max-width: 690px) {
+    .attractionsimages {
+        height: 250px;
+    }
+}
+
 @media only screen and (max-width: 650px) {
     #hamburgericon {
         display: initial;
@@ -274,6 +286,10 @@ footer cite:first-of-type {
     footer section {
         font-size: 12px;
     }
+
+    .categorymain {
+        padding-left: 0px;
+    }
 }
 
 @media only screen and (max-width: 570px) {
@@ -311,12 +327,20 @@ footer cite:first-of-type {
     .categoryimages {
         height: 220px;
     }
+
+    .attractionsimages {
+        height: 230px;
+    }
 }
 
 @media only screen and (max-width: 525px) {
     #hamburgericon {
         display: initial;
         margin-left: 55px;
+    }
+
+    .attractionsimages {
+        height: 190px;
     }
 }
 
@@ -359,6 +383,10 @@ footer cite:first-of-type {
     .categoryimages {
         height: 190px;
     }
+
+    .attractionsimages {
+        height: 160px;
+    }
 }
 
 @media only screen and (max-width: 375px) {
@@ -388,11 +416,19 @@ footer cite:first-of-type {
     section ol {
         padding-left: 10px;
     }
+
+    .attractionsimages {
+        height: 115px;
+    }
 }
 
 @media only screen and (max-width: 290px) {
     .categoryimages {
         height: 150px;
+    }
+
+    .attractionsimages {
+        height: 110px;
     }
 }
 
