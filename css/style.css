@@ -149,4 +149,83 @@ footer cite:first-of-type {
 
 /*responsive styling started*/
 
+@media only screen and (max-width: 755px) {
+    h1 {
+        font-size: 40px;
+        display: inline;
+        padding-left: 60px;
+    }
+
+    #hamburgericon {
+        font-size: 30px;
+        padding-top: 50px;
+        color: rgb(87, 87, 87);
+        margin-left: 85px;
+    }
+
+    nav {
+        display: none;
+    }
+
+    nav ul {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+        list-style: none;
+        margin-left: 45px;
+    }
+
+    nav ul li {
+        padding-bottom: 10px;
+    }
+
+    #bannerimg {
+        margin-top: 25px;
+    }
+
+    header p {
+        font-size: 35px;
+    }
+
+    main h2 {
+        font-size: 25px;
+    }
+
+    main p {
+        font-size: 16px;
+    }
+
+    .linktopage {
+        font-size: 35px;
+    }
+
+    section ol li {
+        font-size: 28px;
+    }
+
+    .categoryimages {
+        height: 300px;
+    }
+
+    .copyrights {
+        font-size: 15px;
+    }
+
+    footer section {
+        font-size: 15px;
+    }
+}
+
+@media only screen and (max-width: 650px) {
+    #hamburgericon {
+        font-size: 25px;
+    }
+
+    h1 {
+        font-size: 35px;
+    }
+
+
+}
+
 /*responsive styling ended*/
