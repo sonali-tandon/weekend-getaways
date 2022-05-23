@@ -14,11 +14,24 @@ h1 {
     font-size: 65px;
     color: whitesmoke;
     text-shadow: 3px 3px rgb(87, 87, 87);
+    margin: 43.5px 0px;
+}
+
+#hamburgericon {
+    display: none;
+}
+
+.navsection {
+    padding-top: 16px;
 }
 
 #bannerimg {
     max-width: 100%;
     margin-top: 7px;
+}
+
+nav {
+    display: block;
 }
 
 nav ul {
@@ -34,7 +47,7 @@ nav ul li a {
     font-size: 17px;
 }
 
-header p {
+.headercaption {
     font-family: 'Waterfall', cursive;
     font-size: 40px;
     font-weight: 500;
@@ -154,11 +167,17 @@ footer cite:first-of-type {
         font-size: 40px;
         display: inline;
         padding-left: 60px;
+        color: rgb(87, 87, 87);
+        text-shadow: 3px 3px lightgray;
+    }
+
+    .navsection {
+        padding-top: 50px;
     }
 
     #hamburgericon {
+        display: initial;
         font-size: 30px;
-        padding-top: 50px;
         color: rgb(87, 87, 87);
         margin-left: 85px;
     }
@@ -183,7 +202,7 @@ footer cite:first-of-type {
         margin-top: 25px;
     }
 
-    header p {
+    .headercaption {
         font-size: 35px;
     }
 
@@ -195,7 +214,8 @@ footer cite:first-of-type {
         font-size: 16px;
     }
 
-    .linktopage {
+    .linktopage,
+    .linktopagecategory {
         font-size: 35px;
     }
 
@@ -218,6 +238,7 @@ footer cite:first-of-type {
 
 @media only screen and (max-width: 650px) {
     #hamburgericon {
+        display: initial;
         font-size: 25px;
     }
 
@@ -225,7 +246,7 @@ footer cite:first-of-type {
         font-size: 35px;
     }
 
-    header p {
+    .headercaption {
         font-size: 30px;
     }
 
@@ -237,7 +258,8 @@ footer cite:first-of-type {
         font-size: 14px;
     }
 
-    .linktopage {
+    .linktopage,
+    .linktopagecategory {
         font-size: 31px;
     }
 
@@ -254,6 +276,124 @@ footer cite:first-of-type {
     }
 }
 
-@media only screen and (max-width: 570px) {}
+@media only screen and (max-width: 570px) {
+    #hamburgericon {
+        display: initial;
+        font-size: 20px;
+    }
+
+    h1 {
+        font-size: 31px;
+        padding-left: 22px;
+    }
+
+    .headercaption {
+        font-size: 27px;
+    }
+
+    main h2 {
+        font-size: 19px;
+    }
+
+    main p {
+        font-size: 13.5px;
+    }
+
+    .linktopage,
+    .linktopagecategory {
+        font-size: 29px;
+    }
+
+    section ol li {
+        font-size: 24px;
+    }
+
+    .categoryimages {
+        height: 220px;
+    }
+}
+
+@media only screen and (max-width: 525px) {
+    #hamburgericon {
+        display: initial;
+        margin-left: 55px;
+    }
+}
+
+@media only screen and (max-width: 450px) {
+    #hamburgericon {
+        display: initial;
+        margin-left: 35px;
+    }
+
+    h1 {
+        padding-left: 10px;
+    }
+
+    footer {
+        flex-direction: column;
+    }
+
+    footer section {
+        padding-left: 20px;
+    }
+
+    .copyrights {
+        align-self: end;
+        padding-right: 20px;
+    }
+}
+
+@media only screen and (max-width: 430px) {
+    h1 {
+        font-size: 28px;
+    }
+
+    #bannerimg {
+        margin-top: 25px;
+        width: 100%;
+        height: 550px;
+        object-fit: cover;
+    }
+
+    .categoryimages {
+        height: 190px;
+    }
+}
+
+@media only screen and (max-width: 375px) {
+    #hamburgericon {
+        display: initial;
+        padding-top: 0;
+    }
+
+    .navsection {
+        padding: 0
+    }
+
+    h1 {
+        margin: 50px 0px 30px 0px;
+        padding: 0;
+    }
+
+    .navsection {
+        display: flex;
+        flex-direction: column-reverse;
+    }
+
+    .categoryimages {
+        height: 165px;
+    }
+
+    section ol {
+        padding-left: 10px;
+    }
+}
+
+@media only screen and (max-width: 290px) {
+    .categoryimages {
+        height: 150px;
+    }
+}
 
 /*responsive styling ended*/
