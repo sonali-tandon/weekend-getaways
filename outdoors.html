@@ -23,10 +23,10 @@
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.7/css/all.css">
 
     <!--css styles-->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css"
+        integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
     <link rel="stylesheet" href="css/style.css">
 
-    <!--JavaScript files-->
-    <script src="js/index.js"></script>
 </head>
 
 <body>
@@ -79,6 +79,9 @@
                 wall.</p>
             <p>Some of the famous places to try are Amazing greek yoghurt, the flying fish, Beecher's cheese (Try their
                 Mac & Cheese), Biscuit bitch, Indi chocolate, Rachel's ginger beer, etc.</p>
+            <button type="button" class="btn btn-info btn-sm px-3" data-toggle="modal" data-target="#myModal"
+                data="No Admission Fee" aria-label="check price">Check
+                Prices</button>
             <section class="multipleimages">
                 <img src="images/pike.jpg" alt="pike place market" class="attractionsimages">
                 <img src="images/pikeplace2.jpg" alt="pike place market image" class="attractionsimages">
@@ -94,6 +97,9 @@
             <p>There are huge structures at the park which were part of a former Seattle Gas Light Company plant. The
                 view is spectacular from here. Get your dslr to capture them. Sit on the grass hills and enjoy the
                 beautiful skies.</p>
+            <button type="button" class="btn btn-info btn-sm px-3" data-toggle="modal" data-target="#myModal"
+                data="Free" aria-label="check price">Check
+                Prices</button>
             <img src="images/kerry.jpg" alt="kerry park" class="attractionsimages">
 
             <h2>
@@ -106,10 +112,32 @@
                 book or enjoy a cup of coffee while mesmerizing the famous sunset.</p>
             <p>It is a short walk up the hill to reach it. Get the spectacular views of the Space Needle to Elliott Bay
                 and on a clear day of the beautful Mount Rainier in the background. </p>
+            <button type="button" class="btn btn-info btn-sm px-3" data-toggle="modal" data-target="#myModal"
+                data="Free" aria-label="check price">Check
+                Prices</button>
             <img src="images/gasworks.jpg" alt="gasworks park" class="attractionsimages">
 
         </ol>
     </main>
+
+    <!-- Modal code -->
+    <div id="myModal" class="modal fade" role="dialog">
+        <div class="modal-dialog">
+
+            <!-- Modal content-->
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h4 class="modal-title">Prices:</h4>
+                </div>
+                <div class="modal-body text-center">
+                    <p>Price: <span id="pricevalue"></span></p>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-default" data-dismiss="modal" aria-label="close">Close</button>
+                </div>
+            </div>
+        </div>
+    </div>
 
     <footer>
         <section>
@@ -136,6 +164,16 @@
                     href="https://unsplash.com/?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Unsplash</a></cite>
         </p>
     </footer>
+
+    <!--JavaScript files-->
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.12.9/dist/umd/popper.min.js"
+        integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous">
+    </script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/js/bootstrap.min.js"
+        integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous">
+    </script>
+    <script src="js/index.js"></script>
 </body>
 
 </html>

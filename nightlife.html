@@ -24,10 +24,10 @@
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.7/css/all.css">
 
     <!--css styles-->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css"
+        integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
     <link rel="stylesheet" href="css/style.css">
 
-    <!--JavaScript files-->
-    <script src="js/index.js"></script>
 </head>
 
 <body>
@@ -81,6 +81,9 @@
             </p>
             <p>They also have a lounge area which has comfy couches and tables for relaxation, including a
                 library-themed area.</p>
+            <button type="button" class="btn btn-info btn-sm px-3" data-toggle="modal" data-target="#myModal"
+                data="Moderately expensive, usually between $10-$25" aria-label="check price">Check
+                Prices</button>
             <img src="images/gin.jpg" alt="Bathtub Gin and Co." class="attractionsimages">
 
             <h2>
@@ -93,6 +96,9 @@
             <p>They serve a wide variety of classic pub fare, including craft burgers. You can also enjoy some yummy
                 food like wrap sandwiches, and shareable bar appetizers. They have an extensive wine, beer, and spirits
                 menus. </p>
+            <button type="button" class="btn btn-info btn-sm px-3" data-toggle="modal" data-target="#myModal"
+                data="Inexpensive, usually $10 and under" aria-label="check price">Check
+                Prices</button>
             <img src="images/centralsaloon.jpg" alt="central saloon" class="attractionsimages">
 
             <h2>
@@ -105,10 +111,32 @@
                 acts and performances by up-and-coming local musicians.</p>
             <p>You can enjoy some Pacific Northwest cuisine while you are here. There are also vegetarian and gluten
                 free options available.</p>
+            <button type="button" class="btn btn-info btn-sm px-3" data-toggle="modal" data-target="#myModal"
+                data="Expensive, usually between $25-$45" aria-label="check price">Check
+                Prices</button>
             <img src="images/jazz.jpg" alt="jazz alley" class="attractionsimages">
 
         </ol>
     </main>
+
+    <!-- Modal code -->
+    <div id="myModal" class="modal fade" role="dialog">
+        <div class="modal-dialog">
+
+            <!-- Modal content-->
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h4 class="modal-title">Prices:</h4>
+                </div>
+                <div class="modal-body text-center">
+                    <p>Price: <span id="pricevalue"></span></p>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-default" data-dismiss="modal" aria-label="close">Close</button>
+                </div>
+            </div>
+        </div>
+    </div>
 
     <footer>
         <section>
@@ -135,6 +163,16 @@
                     href="https://unsplash.com/?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Unsplash</a></cite>
         </p>
     </footer>
+
+    <!--JavaScript files-->
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.12.9/dist/umd/popper.min.js"
+        integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous">
+    </script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/js/bootstrap.min.js"
+        integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous">
+    </script>
+    <script src="js/index.js"></script>
 </body>
 
 </html>

@@ -24,10 +24,10 @@
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.7/css/all.css">
 
     <!--css styles-->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css"
+        integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
     <link rel="stylesheet" href="css/style.css">
 
-    <!--JavaScript files-->
-    <script src="js/index.js"></script>
 </head>
 
 <body>
@@ -82,6 +82,9 @@
             <p>Rooms have fireplaces and cozy bathtubs to pamper you in all seasons. Take a stroll across the hotel
                 gardens and indulge in a spa session and get a massage. The restaurant has received Wine Spectator's
                 Award of Excellence and guests are welcome to take a wine tour which is quite popular.</p>
+            <button type="button" class="btn btn-info btn-sm px-3" data-toggle="modal" data-target="#myModal"
+                data="~$389" aria-label="check price">Check
+                Prices</button>
             <img src="images/willows.jpg" alt="willows lodge" class="attractionsimages">
 
             <h2>
@@ -93,6 +96,9 @@
                 with handmade beds. Take long naps, read a book and enjoy the blissful nature.</p>
             <p>You can also visit the nearby farmer's markets, explore the hiking trails and just explore the nature
                 around.</p>
+            <button type="button" class="btn btn-info btn-sm px-3" data-toggle="modal" data-target="#myModal"
+                data="$300 to $525" aria-label="check price">Check
+                Prices</button>
             <img src="images/treehouse.jpg" alt="treehouse point" class="attractionsimages">
 
             <h2>
@@ -105,10 +111,32 @@
             </p>
             <p>The rooms have whirlpool tubs and wood-burning fireplaces and you can enjoy beatiful views of the falls
                 from your room.</p>
+            <button type="button" class="btn btn-info btn-sm px-3" data-toggle="modal" data-target="#myModal"
+                data="~$404" aria-label="check price">Check
+                Prices</button>
             <img src="images/salish.jpg" alt="salish lodge" class="attractionsimages">
 
         </ol>
     </main>
+
+    <!-- Modal code -->
+    <div id="myModal" class="modal fade" role="dialog">
+        <div class="modal-dialog">
+
+            <!-- Modal content-->
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h4 class="modal-title">Prices:</h4>
+                </div>
+                <div class="modal-body text-center">
+                    <p>Price: <span id="pricevalue"></span></p>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-default" data-dismiss="modal" aria-label="close">Close</button>
+                </div>
+            </div>
+        </div>
+    </div>
 
     <footer>
         <section>
@@ -135,6 +163,16 @@
                     href="https://unsplash.com/s/photos/salish-lodge?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Unsplash</a></cite>
         </p>
     </footer>
+
+    <!--JavaScript files-->
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.12.9/dist/umd/popper.min.js"
+        integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous">
+    </script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/js/bootstrap.min.js"
+        integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous">
+    </script>
+    <script src="js/index.js"></script>
 </body>
 
 </html>

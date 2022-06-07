@@ -47,6 +47,12 @@ nav ul li a {
     font-size: 17px;
 }
 
+nav ul li a:hover {
+    background-color: whitesmoke;
+    text-decoration: none;
+    color: rgb(87, 87, 87);
+}
+
 .headercaption {
     font-family: 'Waterfall', cursive;
     font-size: 40px;
@@ -88,6 +94,11 @@ main p {
     font-size: 32px;
     color: rgb(87, 87, 87);
     text-decoration: none;
+}
+
+.linktopage:hover,
+.linktopagecategory:hover {
+    background-color: whitesmoke;
 }
 
 section ol {
