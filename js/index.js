@@ -15,6 +15,5 @@ const showNav = () => {
 $(".modal").on("show.bs.modal", function (event) {
     let buttonClicked = $(event.relatedTarget);
     let buttonPrice = buttonClicked.attr("data");
-    let modalText = document.getElementById("pricevalue");
-    modalText.innerHTML = buttonPrice;
+    $("#pricevalue").html(buttonPrice);
 });
